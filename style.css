@@ -1,0 +1,164 @@
+/*General CSS*/
+body {
+	background-color: white;
+	padding: 0px;
+	margin: 0px;
+	font: 16px Arial, Calibri;
+}
+/*Navigation bar*/
+nav {
+	background: #FFDBAA;
+
+}
+/*Unordered list in Nav-Bar*/
+nav #nav-list {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+nav ul li {
+	padding: 16px;
+	text-align: center;
+	border: 1px solid black;
+	font-family: 'Just Another Hand', Arial;
+	transition: background-color 03.s, padding 0.8s linear;
+}
+
+nav ul li:hover {
+	background-color: #552700;
+}
+
+a {
+	text-decoration: none;
+	color: 	 #805215;
+}
+
+
+#main {
+	background: linear-gradient(to right, rgba(109, 96, 39,0.8), rgba(211, 203, 184,0.4)), url(bg1.jpg);
+	background-size: cover;
+	margin-top: 0px;
+	padding-top: 200px;
+	min-height: 500px;
+	color:white;
+	font-family: "Sofia", Arial;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 80px;
+
+}
+#main h1{
+	margin: 0px;
+	font-size: 2.5rem;
+	text-align: center;
+}
+
+#main p{
+	width: 50%;
+	text-align: center;
+}
+
+#testimonials {
+	display: flex;
+	align-content: stretch;
+	justify-content: center;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+.testi {
+	border: solid;
+	border-radius: 110px;
+	margin-right: 20px;
+	box-shadow: 0px 0px 5px;
+	margin: 30px;
+	transition: transform 0.3s;
+
+}
+
+.testi:hover{
+	background: brown;
+	box-shadow: 0px 0px 25px;
+}
+
+#showcase {
+	display: flex;
+	align-content: stretch;
+	justify-content: center;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: space-between;
+}
+
+
+.cards {
+	max-width: 350px;
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+	box-shadow: 0px 0px 5px;
+}
+
+.cards:hover {
+	background-color: green;
+	font: Tahoma;
+	color: white;
+}
+
+
+.cards .card-img {
+	height: 200px;
+	overflow: hidden:;
+}
+
+.cards .card-img img{
+	height: 100%;
+	max-width: 150px;
+}
+
+.card-desc {
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.cards .button {
+	margin: 15px;
+}
+.cards .button a {
+	padding: 10px;
+	margin-bottom: 0px;
+	color: black;
+	background-color: gray;
+}
+
+footer	 {
+	background-color: cadetblue;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+footer a {
+	padding: 20px;
+}
+#media-icons ul{
+	display: flex;
+	list-style: none;
+	padding: 20px;	
+}
+/*For Responsive Web design*/
+@media screen and (min-width: 700px){
+	nav ul {
+		text-align: right;
+	}
+
+	nav ul li {
+		display: inline-block;
+		border: 1px solid #805215 ;
+		text-align: left;
+	}
+
+}
